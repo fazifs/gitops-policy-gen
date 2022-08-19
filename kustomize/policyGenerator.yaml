@@ -1,12 +1,15 @@
 apiVersion: policy.open-cluster-management.io/v1
 kind: PolicyGenerator
 metadata:
-  name: policy-generator-blog
+  name: policy-gitops-generator
 policyDefaults:
-  namespace: policy-generator-blog
+  namespace: policy-gitops-generator
+  placement:
+    clusterSelectors:
+      vendor: "OpenShift"
   remediationAction: enforce
   severity: medium
 policies:
-  - name: policy-generator-blog-app
+  - name: policy-gitops-generator
     manifests:
       - path: app-policy
