@@ -6,7 +6,7 @@ policyDefaults:
   namespace: policy-gitops-generator
   placement:
     clusterSelectors:
-      vendor: "OpenShift"
+      cloud: "Amazon"
   remediationAction: enforce
   severity: medium
 policies:
