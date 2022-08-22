@@ -6,7 +6,7 @@ policyDefaults:
   namespace: policy-gitops-generator
   placement:
     clusterSelectors:
-      cloud: "Amazon"
+      name: "test-cluster"
   remediationAction: enforce
   severity: medium
 policies:
