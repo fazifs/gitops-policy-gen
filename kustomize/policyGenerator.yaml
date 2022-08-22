@@ -6,7 +6,7 @@ policyDefaults:
   namespace: policy-gitops-generator
   placement:
     clusterSelectors:
-      name: "test-cluster"
+      logging: "enabled"
   remediationAction: enforce
   severity: medium
 policies:
