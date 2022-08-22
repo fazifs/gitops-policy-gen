@@ -10,6 +10,6 @@ policyDefaults:
   remediationAction: enforce
   severity: medium
 policies:
-  - name: policy-gitops-generator
+  - name: policy-enable-openshift-logging
     manifests:
-      - path: app-policy
+      - path: enable-openshift-logging
