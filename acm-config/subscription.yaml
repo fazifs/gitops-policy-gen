@@ -69,7 +69,7 @@ spec:
       type: ManagedClusterConditionAvailable
   clusterSelector:
     matchExpressions:
-      - key: environment
+      - key: local-cluster
         operator: In
         values:
-          - "dev"
+          - "true"
