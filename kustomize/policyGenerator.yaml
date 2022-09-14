@@ -13,3 +13,7 @@ policies:
   - name: policy-enable-openshift-logging
     manifests:
       - path: enable-openshift-logging
+
+  - name: cert-policy
+    manifests:
+      - path: cert
