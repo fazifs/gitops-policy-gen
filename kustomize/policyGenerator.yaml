@@ -4,9 +4,6 @@ metadata:
   name: policy-gitops-generator
 policyDefaults:
   namespace: policy-gitops-generator
-  placement:
-    clusterSelectors:
-      vendor: "OpenShift"
   remediationAction: enforce
   severity: medium
 policies:
