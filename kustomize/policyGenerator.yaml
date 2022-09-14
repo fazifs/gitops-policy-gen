@@ -10,8 +10,9 @@ policyDefaults:
   remediationAction: enforce
   severity: medium
 policies:
-  - name: policy-enable-openshift-logging
+ # - name: policy-enable-openshift-logging
+  #  manifests:
+   #   - path: enable-openshift-logging
+  - name: cert-policy
     manifests:
-      - path: enable-openshift-logging
-
- 
+      - path: cert
