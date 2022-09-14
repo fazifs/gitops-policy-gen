@@ -13,6 +13,3 @@ policies:
   - name: policy-enable-openshift-logging
     manifests:
       - path: enable-openshift-logging
-  - name: policy-enable-openshift-logging
-    manifests:
-      - path: enable-openshift-logging
