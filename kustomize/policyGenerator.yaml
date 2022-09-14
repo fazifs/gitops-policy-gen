@@ -14,6 +14,4 @@ policies:
     manifests:
       - path: enable-openshift-logging
 
-  - name: cert-policy
-    manifests:
-      - path: cert
+ 
