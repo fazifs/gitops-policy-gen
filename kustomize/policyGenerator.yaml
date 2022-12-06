@@ -10,3 +10,6 @@ policies:
   - name: policy-enable-openshift-logging
     manifests:
       - path: enable-openshift-logging
+  - name: policy-create-ns
+    manifests:
+      - path: create-ns
