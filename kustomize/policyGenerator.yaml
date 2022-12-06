@@ -21,4 +21,4 @@ policyDefaults:
         namespace: "created"
     manifests:
       - path: create-ns
-        remediationAction: inform
+    remediationAction: inform
