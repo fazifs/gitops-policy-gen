@@ -6,14 +6,15 @@ policyDefaults:
   namespace: policy-gitops-generator
   #remediationAction: enforce
   severity: medium
-policies:
-  - name: policy-enable-openshift-logging
-    placement:
-      clusterSelectors:
-        logging: "enabled"
-    manifests:
-      - path: enable-openshift-logging
-        remediationAction: enforce
+#policies:
+ # - name: policy-enable-openshift-logging
+ #   placement:
+ #     clusterSelectors:
+ #       logging: "enabled"
+ #       vendor: "OpenShift"
+ #   manifests:
+ #     - path: enable-openshift-logging
+ #       remediationAction: enforce
   - name: policy-create-ns
     placement:
       clusterSelectors:
