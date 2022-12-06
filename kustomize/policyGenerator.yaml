@@ -6,7 +6,7 @@ policyDefaults:
   namespace: policy-gitops-generator
   #remediationAction: enforce
   severity: medium
-#policies:
+policies:
  # - name: policy-enable-openshift-logging
  #   placement:
  #     clusterSelectors:
