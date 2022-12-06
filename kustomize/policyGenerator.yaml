@@ -4,6 +4,9 @@ metadata:
   name: policy-gitops-generator
 policyDefaults:
   namespace: policy-gitops-generator
+  placement:
+    clusterSelectors:
+      logging: "enabled"
   remediationAction: enforce
   severity: medium
 policies:
