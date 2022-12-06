@@ -4,7 +4,7 @@ metadata:
   name: policy-gitops-generator
 policyDefaults:
   namespace: policy-gitops-generator
-  remediationAction: enforce
+  #remediationAction: enforce
   severity: medium
 policies:
   - name: policy-enable-openshift-logging
@@ -13,9 +13,11 @@ policies:
         logging: "enabled"
     manifests:
       - path: enable-openshift-logging
+        remediationAction: enforce
   - name: policy-create-ns
     placement:
       clusterSelectors:
         namespace: "created"
     manifests:
       - path: create-ns
+        remediationAction: inform
