@@ -23,5 +23,5 @@ policies:
      # - path: create-ns
     #remediationAction: enforce
  - name: namespace-purpose-required
-    manifests:
+   manifests:
       - path: kyverno.yaml
