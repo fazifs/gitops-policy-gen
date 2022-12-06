@@ -15,10 +15,13 @@ policies:
  #   manifests:
  #     - path: enable-openshift-logging
  #       remediationAction: enforce
-  - name: policy-create-ns
-    placement:
-      clusterSelectors:
-        namespace: "created"
+ # - name: policy-create-ns
+  #  placement:
+   #   clusterSelectors:
+   #     namespace: "created"
+    #manifests:
+     # - path: create-ns
+    #remediationAction: enforce
+ - name: namespace-purpose-required
     manifests:
-      - path: create-ns
-    remediationAction: enforce
+      - path: kyverno.yaml
